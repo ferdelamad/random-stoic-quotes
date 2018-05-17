@@ -1,9 +1,21 @@
 * {
   font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #CD5C5C;
+}
+
+.quotes-container {
+  padding-top: 25px;
+}
+
+.container {
+	width: 1140px;
+	margin: 25px auto 25px auto;
 }
 
 h1, a {
