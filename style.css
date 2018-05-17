@@ -10,7 +10,13 @@ body {
 }
 
 .quotes-container {
-  padding-top: 25px;
+  margin: auto;
+  background-color: #82E0AA;
+  width: 500px;
+  height: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
 }
 
 .container {
@@ -18,11 +24,18 @@ body {
 	margin: 25px auto 25px auto;
 }
 
+.seneca, .plato {
+  text-align: center;
+  margin: 100px 100px 100px 100px
+}
+
 h1, a {
   text-align: center;
 }
 
 a {
+  padding-top: 25px;
+  padding-bottom: 10px;
   text-align: center;
   display: block;
 }
