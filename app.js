@@ -27,7 +27,11 @@
         'Human behavior flows from three main sources: desire, emotion, and knowledge.',
         'Excellence is not a gift, but a skill that takes practice. We do not act ‘rightly’ because we are ‘excellent’, in fact we achieve ‘excellence’ by acting ‘rightly.',
         'Good actions give strength to ourselves and inspire good actions in others.'
-      ]
+      ],
+
+      marcusAurelius: [],
+
+      epictetus: []
     }
   }
 
