@@ -9,24 +9,43 @@ body {
   background-color: #CD5C5C;
 }
 
-.quotes-container {
-  margin: auto;
-  background-color: #82E0AA;
-  width: 500px;
-  height: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  border-radius: 500px;
-}
-
 .container {
 	width: 1140px;
 	margin: 25px auto 25px auto;
 }
 
+.circle {
+  margin: auto;
+  padding-top: 25px;
+  background-color: grey;
+  width: 550px;
+  height: 550px;
+  -webkit-border-radius: 550px;
+  -moz-border-radius: 550px;
+  border-radius: 550px;
+
+}
+
+.quotes-container {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  background: url(imgs/seneca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .seneca, .plato {
   text-align: center;
   margin: 100px 100px 100px 100px
+}
+
+h1 {
+  margin-bottom: 15px;
 }
 
 h1, a {
