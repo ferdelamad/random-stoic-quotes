@@ -38,10 +38,11 @@
   //Create the Methods for our APP
   var methods = {
   //Give a different background color when clicking the main button
-    changeBackground: function() {
+    changeBackground: function(author) {
       let random = Math.floor(Math.random() * data.backgrounds.length);
       let color = data.backgrounds[random];
       $('body').css('background-color', color);
+      $('.quotes-container').css("background-image", "url(imgs/" + author + ".jpg)")
       console.log('Changed the background color to ' + color);
     },
   //Select an Author randomly
@@ -70,8 +71,6 @@
 
   //Global controllet of our APP
   $('.change').click(function(event){
-    //Changue the background
-    methods.changeBackground();
     //Delete previous quote if there is one
       //Get the siblings of the target button and hide them
     $(event.target).siblings().hide();
@@ -79,6 +78,8 @@
     var author = methods.selectAuthor();
     //Select a random quote from the previous author
     var quote = methods.selectQuote(author);
+    //Changue the background
+    methods.changeBackground(author);
     //Display the quote on the UI interface
     methods.displayQuote(author, quote);
   });
