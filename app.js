@@ -42,7 +42,11 @@
       let random = Math.floor(Math.random() * data.backgrounds.length);
       let color = data.backgrounds[random];
       $('body').css('background-color', color);
-      $('.quotes-container').css("background-image", "url(imgs/" + author + ".jpg)")
+      $('#quotes-container').css("background-image", "url(imgs/" + author + ".jpg)");
+      $('#quotes-container').toggleClass();
+      $('#quotes-container').addClass('' + author + '-bk');
+      $('#circle').toggleClass();
+      $('#circle').addClass('' + author + '-bk');
       console.log('Changed the background color to ' + color);
     },
   //Select an Author randomly
@@ -64,7 +68,7 @@
       html += '<h3>' + author + '</h3>';
       html += '<p>' + quote + '</p>';
       div.html(html);
-      (div.fadeIn('slow')).appendTo('.quotes-container');
+      (div.fadeIn('slow')).appendTo('#quotes-container');
     }
 
   };

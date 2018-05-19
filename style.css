@@ -14,19 +14,18 @@ body {
 	margin: 25px auto 25px auto;
 }
 
-.circle {
+#circle {
   margin: auto;
   padding-top: 25px;
-  background-color: grey;
+
   width: 550px;
   height: 550px;
   -webkit-border-radius: 550px;
   -moz-border-radius: 550px;
   border-radius: 550px;
-
 }
 
-.quotes-container {
+#quotes-container {
   margin: auto;
   width: 500px;
   height: 500px;
@@ -39,7 +38,22 @@ body {
   background-position: center center;
 }
 
+.circle {
+  background-color: grey;
+}
+
+.seneca-bk {
+  background-color: rgba(18, 175, 200, 0.75);
+  color: rgba(18, 175, 200, 0.85);
+}
+
+.plato-bk {
+  background-color: rgba(225, 85, 60, 0.75);
+  color: rgba(245, 245, 245, 0.85);
+}
+
 .seneca, .plato {
+
   text-align: center;
   margin: 100px 100px 100px 100px
 
@@ -65,5 +79,5 @@ p, h3 {
   font-weight: bold;
   margin-bottom: 5px;
   color: rgba(245, 245, 245, 0.85);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(225, 85, 60, 0.75);
 }
