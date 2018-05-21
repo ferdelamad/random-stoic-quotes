@@ -31,7 +31,17 @@
 
       marcusAurelius: [],
 
-      epictetus: []
+      epictetus: [
+        'It is impossible for a man to learn what he thinks he already knows.',
+        'No man is free who is not master of himself.',
+        'Who is your master? Anyone who has control over things upon which you’ve set your heart, or over things which you seek to avoid.',
+        'You are not your body and hair-style, but your capacity for choosing well. If your choices are beautiful, so too will you be.',
+        'Circumstances don’t make the man, they only reveal him to himself.',
+        'In prosperity it is very easy to find a friend; but in adversity it is the most difficult of all things.',
+        'Deliberate much before saying or doing anything, for you will not have the power of recalling what is said or done.',
+        'It isn’t the events themselves that disturb people, but only their judgements about them.',
+        'To make the best of what is in our power, and take the rest as it occurs.'
+      ]
     }
   }
 
