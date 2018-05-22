@@ -51,12 +51,14 @@
     changeBackground: function(author) {
       let random = Math.floor(Math.random() * data.backgrounds.length);
       let color = data.backgrounds[random];
+      let quotes = $('#quotes-container');
+      let circle = $('#circle')
       $('body').css('background-color', color);
-      $('#quotes-container').css("background-image", "url(imgs/" + author + ".jpg)");
-      $('#quotes-container').toggleClass();
-      $('#quotes-container').addClass('' + author + '-bk');
-      $('#circle').toggleClass();
-      $('#circle').addClass('' + author + '-bk');
+      quotes.css("background-image", "url(imgs/" + author + ".jpg)");
+      quotes.toggleClass();
+      quotes.addClass('' + author + '-bk');
+      circle.toggleClass();
+      circle.addClass('' + author + '-bk');
       console.log('Changed the background color to ' + color);
     },
   //Select an Author randomly
