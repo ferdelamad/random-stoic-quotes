@@ -75,12 +75,30 @@
     },
   //Insert the Author + Quote into the UI
     displayQuote: function(author, quote) {
-      let div = $('<div class="' + author + '"></div>')
-      let html = '';
-      html += '<h3>' + author + '</h3>';
-      html += '<p>' + quote + '</p>';
-      div.html(html);
-      (div.fadeIn('slow')).appendTo('#quotes-container');
+      var div = $('<div class="' + author + '"></div>');
+      //let html = '';
+      //html += '<h3>' + author + '</h3>';
+      //html += '<p>' + quote + '</p>';
+      //let author = '<h3>' + author + '</h3>'
+      //let quote = '<p>' + quote + '</p>'
+      //div.html(html);
+      //(div.fadeIn('slow')).appendTo('#quotes-container');
+      //(div.hide.()).appendTo('#quotes-container').show('normal');
+      $("#quotes-container").append(div).hide().show('normal');
+
+      let a = $('<h3>' + author + '</h3>').hide();
+      div.append(a);
+      setTimeout(function() { return a.show('normal') }, 500)
+
+      let q = $('<p>' + quote + '</p>').hide();
+      div.append(q);
+      setTimeout(function() { return q.show('normal') }, 500)
+
+    },
+   //animation
+    animation: function() {
+      $('#circle').appendTo('.container').show('slow');
+      $('#quotes-container').appendTo('#circle').show('slow');
     }
 
   };
@@ -94,6 +112,8 @@
     var author = methods.selectAuthor();
     //Select a random quote from the previous author
     var quote = methods.selectQuote(author);
+    //animation
+    //methods.animation();
     //Changue the background
     methods.changeBackground(author);
     //Display the quote on the UI interface
