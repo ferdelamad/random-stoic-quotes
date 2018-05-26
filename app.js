@@ -75,7 +75,8 @@
     },
   //Insert the Author + Quote into the UI
     displayQuote: function(author, quote) {
-      var div = $('<div class="' + author + '"></div>');
+      const $div = $('<div class="' + author + '"></div>');
+      const $quotes = $("#quotes-container")
       //let html = '';
       //html += '<h3>' + author + '</h3>';
       //html += '<p>' + quote + '</p>';
@@ -84,21 +85,25 @@
       //div.html(html);
       //(div.fadeIn('slow')).appendTo('#quotes-container');
       //(div.hide.()).appendTo('#quotes-container').show('normal');
-      $("#quotes-container").append(div).hide().show('normal');
+      $quotes.append($div)
+      $quotes.hide().fadeIn(700);
 
       let a = $('<h3>' + author + '</h3>').hide();
-      div.append(a);
-      setTimeout(function() { return a.show('normal') }, 500)
+      $div.append(a);
+      setTimeout(function() { return a.show('normal') }, 400)
 
       let q = $('<p>' + quote + '</p>').hide();
-      div.append(q);
-      setTimeout(function() { return q.show('normal') }, 500)
+      $div.append(q);
+      setTimeout(function() { return q.show('normal') }, 400)
 
     },
    //animation
     animation: function() {
-      $('#circle').appendTo('.container').show('slow');
-      $('#quotes-container').appendTo('#circle').show('slow');
+      $('#circle').appendTo('.container')
+      $('#cirlce').hide().fadeIn(3000).delay(3000);
+      $('#circle').animate({ opacity: 1, top: "-10px" }, 'slow');
+      $('#quotes-container').appendTo('#circle')
+      //$('#quotes-container').hide().fadeIn(3000).delay(3000);
     }
 
   };
