@@ -29,7 +29,18 @@
         'Good actions give strength to ourselves and inspire good actions in others.'
       ],
 
-      marcusAurelius: [],
+      marcusAurelius: [
+        'When you arise in the morning, think of what a precious privilege it is to be alive - to breathe, to think, to enjoy, to love.',
+        'It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinions than our own.',
+        'Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.',
+        'The happiness of your life depends upon the quality of your thoughts.',
+        'If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.',
+        'You have power over your mind - not outside events. Realize this, and you will find strength.',
+        'The object of life is not to be on the side of the majority, but to escape finding oneself in the ranks of the insane.',
+        'The opinion of 10,000 men is of no value if none of them know anything about the subject.',
+        'Whenever you are about to find fault with someone, ask yourself the following question: What fault of mine most nearly resembles the one I am about to criticize?',
+        'It is not death that a man should fear, but he should fear never beginning to live.'
+      ],
 
       epictetus: [
         'It is impossible for a man to learn what he thinks he already knows.',
@@ -51,8 +62,8 @@
     changeBackground: function(author) {
       let random = Math.floor(Math.random() * data.backgrounds.length);
       let color = data.backgrounds[random];
-      let quotes = $('#quotes-container');
-      let circle = $('#circle')
+      const quotes = $('#quotes-container');
+      const circle = $('#circle')
       $('body').css('background-color', color);
       quotes.css("background-image", "url(imgs/" + author + ".jpg)");
       quotes.toggleClass();
