@@ -109,7 +109,7 @@
 
     },
     displayBtn: function() {
-      const $btn = $('<a href="#" class="change2">RANDOM QUOTE</a>');
+      const $btn = $('<a href="#" class="change">RANDOM QUOTE</a>');
       const $quotes = $("#quotes-container")
       $quotes.append($btn);
       $btn.hide().fadeIn(1500).delay(1500);
@@ -128,31 +128,9 @@
   };
 
   //Global controllet of our APP
-  $('.change').click(function(event){
+  $('body').on('click', '.change', function(event){
     //Delete previous quote if there is one
       //Get the siblings of the target button and hide them
-    $(event.target).siblings().hide();
-    //Hide button
-    $(event.target).hide();
-    //Select a random author
-    var author = methods.selectAuthor();
-    //Select a random quote from the previous author
-    var quote = methods.selectQuote(author);
-    //animation
-    //methods.animation();
-    //Display button again in the UI
-    methods.displayBtn();
-    //Changue the background
-    methods.changeBackground(author);
-    //Display the quote in the UI interface
-    methods.displayQuote(author, quote);
-  });
-
-  //Global controllet of our APP
-  $('body').on('click', '.change2', function(event){
-    //Delete previous quote if there is one
-      //Get the siblings of the target button and hide them
-    console.log('Change 2 was clicked');
     $(event.target).siblings().hide();
     //Hide button
     $(event.target).hide();
