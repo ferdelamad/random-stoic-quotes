@@ -60,17 +60,17 @@
   var methods = {
   //Give a different background color when clicking the main button
     changeBackground: function(author) {
-      let random = Math.floor(Math.random() * data.backgrounds.length);
-      let color = data.backgrounds[random];
+      //let random = Math.floor(Math.random() * data.backgrounds.length);
+      //let color = data.backgrounds[random];
       const quotes = $('#quotes-container');
       const circle = $('#circle')
-      $('body').css('background-color', color);
+      //$('body').css('background-color', color);
       quotes.css("background-image", "url(imgs/" + author + ".jpg)");
       quotes.toggleClass();
       quotes.addClass('' + author + '-bk');
       circle.toggleClass();
       circle.addClass('' + author + '-bk');
-      console.log('Changed the background color to ' + color);
+      //console.log('Changed the background color to ' + color);
     },
   //Select an Author randomly
     selectAuthor: function() {

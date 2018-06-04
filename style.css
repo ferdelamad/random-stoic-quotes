@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #CD5C5C;
+  background-color: #1C2833;
   width: 100%;
   height:  100%;
   line-height: 1.6em;
@@ -42,7 +42,7 @@ body {
 }
 
 .circle {
-  background-color: grey;
+  background-color: rgba(18, 175, 200, 0.75);
 }
 
 .footer {
@@ -109,7 +109,7 @@ p, h3 {
 /*  Footer  */
 .footer {
   display: flex;
-  background-color: black;
+  background-color: #212F3D;
   text-align: center;
   position: absolute;
   left: 50%;
@@ -119,7 +119,7 @@ p, h3 {
 i {
   margin: 6px 5px 0 5px;
   color: red;
-  background-color: none;
+  background-color: #212F3D;
 }
 
 .down {
@@ -127,6 +127,6 @@ i {
   text-align: center;
   font-weight: bold;
   font-family: 'Lora', sans-serif;
-  background-color: black;
+  background-color: #212F3D;
   color: white;
 }
