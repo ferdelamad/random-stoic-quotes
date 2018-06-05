@@ -17,6 +17,11 @@ body {
 	margin: 25px auto 25px auto;
 }
 
+.logo {
+  text-align: center;
+  color: white;
+}
+
 #circle {
   margin: auto;
   padding-top: 25px;

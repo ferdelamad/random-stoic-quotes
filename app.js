@@ -147,3 +147,5 @@
     //Display the quote in the UI interface
     methods.displayQuote(author, quote);
   });
+
+  $('.logo').hide().fadeIn(1250).delay(1250);
