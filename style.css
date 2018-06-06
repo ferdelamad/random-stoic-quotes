@@ -79,7 +79,19 @@ body {
   background-color: rgba(225, 85, 60, 0.75);
 }
 
-.seneca, .plato {
+.marcusAurelius-bk {
+  background-color: rgba(244, 65, 131, 0.75);
+}
+
+.marcusAurelius-bk h3 {
+  background-color: rgba(244, 65, 131, 0.75);
+}
+
+.marcusAurelius-bk p {
+  background-color: rgba(244, 65, 131, 0.75);
+}
+
+.seneca, .plato, .marcusAurelius {
 
   text-align: center;
   margin: 100px 100px 100px 100px;

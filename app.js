@@ -74,7 +74,7 @@
     },
   //Select an Author randomly
     selectAuthor: function() {
-      let authors = ['seneca', 'plato'];
+      let authors = ['seneca', 'plato', 'marcusAurelius'];
       let random = Math.floor(Math.random() * authors.length);
       console.log('Author for this quote: ' + authors[random]);
       return authors[random];
