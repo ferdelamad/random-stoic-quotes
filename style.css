@@ -55,39 +55,15 @@ body {
   font-size: 12px;
 }
 
-.seneca-bk {
+.seneca-bk, .seneca-bk h3, .seneca-bk p {
   background-color: rgba(18, 175, 200, 0.75);
 }
 
-.seneca-bk h3 {
-  background-color: rgba(18, 175, 200, 0.75);
-}
-
-.seneca-bk p {
-  background-color: rgba(18, 175, 200, 0.75);
-}
-
-.plato-bk {
+.plato-bk, .plato-bk h3, .plato-bk p  {
   background-color: rgba(225, 85, 60, 0.75);
 }
 
-.plato-bk h3 {
-  background-color: rgba(225, 85, 60, 0.75);
-}
-
-.plato-bk p {
-  background-color: rgba(225, 85, 60, 0.75);
-}
-
-.marcusAurelius-bk {
-  background-color: rgba(244, 65, 131, 0.75);
-}
-
-.marcusAurelius-bk h3 {
-  background-color: rgba(244, 65, 131, 0.75);
-}
-
-.marcusAurelius-bk p {
+.marcusAurelius-bk, .marcusAurelius-bk h3, .marcusAurelius-bk p {
   background-color: rgba(244, 65, 131, 0.75);
 }
 
