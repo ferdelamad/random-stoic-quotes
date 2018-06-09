@@ -67,7 +67,11 @@ body {
   background-color: rgba(244, 65, 131, 0.75);
 }
 
-.seneca, .plato, .marcusAurelius {
+.epictetus-bk, .epictetus-bk h3, .epictetus-bk p {
+  background-color: rgba(65, 244, 143, 0.75);
+}
+
+.seneca, .plato, .marcusAurelius, .epictetus {
 
   text-align: center;
   margin: 100px 100px 100px 100px;
